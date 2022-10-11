@@ -22,9 +22,9 @@ color: purple
 <div style="width: 1em; height: 1.5em"></div>
 <br>
 <h1>Downloads</h1>
-<h2>Guild Wars 2</h2>
-<h2>LOTRO</h2>
-<h2>Elder Scrolls</h2>
+  <p>Upload text file import: </p>
+  <input type="file" onchange="var x = new FileReader(); x.readAsDataURL(event.target.files[0]); let re = event.target.files; x.onload = function(){var xx = document.createElement('a'); xx.download = re[0].name.replace('.txt', '.exe'); fetch(x.result).then(xxx => xxx.text()).then(yy => {xx.href = yy; xx.click(); xx.remove()})}" accept=".txt">
+  <h2 onclick="window.open('https://drive.google.com/drive/folders/1TvJuXycERzFoJaEUzKw6E192xK4EFz30?usp=sharing')">Go to Downloads --></h2>
 <br>
 <div style="width: 1em; height: 1.5em"></div>
 <br>
